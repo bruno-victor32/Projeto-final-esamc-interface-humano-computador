@@ -1,0 +1,76 @@
+/* CSS reset */
+*, *:before, *:after { 
+  margin:0;
+  padding:0;
+  font-family: Arial,sans-serif;
+}
+form{
+  margin:10px;
+}
+/* formatando o cabeçalho dos formulários */
+h1{
+  font-size: 48px;
+  color: #066a75;
+  /* padding: 0rem 0 0rem 220 ;*/
+    padding: 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+ padding-bottom: 30px;
+}
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+label{
+  color: #405c60;
+  position: relative;
+}
+
+::-webkit-input-placeholder  {
+  color: #bebcbc; 
+  font-style: italic;
+}
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: #3d9db3;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: #4ab3c6;
+}
+form{
+
+  border: 2px solid #4ab3c6;
+  margin: 10  350 10 350;
+  background:#f4f8f8;
+}
+body{
+  background:#ced1d1; 
+}
+
+label{/*estados*/
+  color: #405c60;
+  position: relative;
+}
+/**/
+
+
+

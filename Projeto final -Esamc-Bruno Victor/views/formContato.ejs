@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bruno Victor - Incluir Contato</title>
+
+    <form method="POST">
+        <div class="col-md-8 order-md-1">
+            <h1 class="mb-3">Inclusão de dados</h1>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                </div>
+
+                <div class="col-md-8 order-md-1">
+                    <label for="firstName"> Nome</label>
+                    <input name="nome" class="form-control" id="firsname" placeholder="Digite seu nome"
+                        value="<%=contato.nome %>" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="col-md-8 order-md-1">
+                    <label for="lastName">Sobrenome</label>
+                    <input name="sobrenome" class="form-control" id="lastName" placeholder="Digite seu Sobrenome"
+                        value="<%=contato.sobrenome %>" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+
+
+
+
+
+                <!--<div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="segundonome" class="form-control" id="firstName" placeholder="" value="<%=contato.segundonome %>" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>!-->
+
+                <!--<div>
+        Nome: <input name="nome" value="<%=contato.nome %>" />
+    </div>!-->
+
+                <div class="col-md-8 order-md-1">
+                    <label for="username">Apelido</label>
+                    
+
+                        <input name="apelido" class="form-control" id="apelido" placeholder="Digite seu apelido"
+                            value="<%=contato.apelido %>" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            Your username is required.
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!--<div>
+        E-mail: <input name="email" value="<%=contato.email %>" />
+    </div>!-->
+                    <div class="col-md-8 order-md-1">
+                        <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                        <input name="email" class="form-control" id="email" placeholder="you@example.com" >
+
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+
+                    <!--<div>
+        Rede Social: <input name="rede_social" value="<%=contato.rede_social %>" />
+    </div>!-->
+
+                    <div class="col-md-8 order-md-1  ">
+                        <label for="firstName"> Rede Social <span class="text-muted">(Opcional)</span></label>
+                        <input name="rede_social" class="form-control" id="firsname"
+                            placeholder="Digite sua rede social" value="<%=contato.rede_social %>" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                        <!-- <div>
+        Telefone: <input name="telefone" value="<%=contato.telefone %>" />
+    </div>!-->
+
+                        <div class="md-8   ">
+                            <label for="firstName"> Telefone </label>
+                            <input name="telefone" class="form-control" id="firsname" placeholder="Digite seu telefone"
+                                value="<%=contato.telefone %>" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+
+                            <div class="col">
+                                Estado:
+                                <select class="form-control is-valid" name="uf" id="uf" style="width: 130px" required>
+                                    <option value="">Selecione</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AM">AM</option>
+                                    <option value="AP">AP</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="PR">PR</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SE">SE</option>
+                                    <option value="SP">SP</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                            <br />
+
+
+
+
+                            <input type="submit" value="Salvar" />
+                            <input type="hidden" value=value="<%=contato.id %>" />
+            </form>
+
+</html>

@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stylee.css">
+    
+    <title>Bruno Victor - Formulário</title>
+
+    <link rel="stylesheet" href="css/all.css" />
+
+
+</head>
+
+<body>
+    <h1>Contatos</h1>
+    <hr>
+
+    <a href="/formContato"><button type="button" class="btn btn-outline-success">Incluir</button></a>
+    <a href="/index"><button type="button" class="btn btn-info">Conhecer a história do Bruno</button></a>
+
+
+    <table class="table table-bordered table-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">Apelido</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Rede Social</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Estado</th>
+
+            <!--<td>Segundo Nome</td>!-->
+        </tr>
+        <% contato.forEach(function(item){ %>
+        <tr>
+            <td scope="row"><%= item.id %></td>
+            <td scope="row"><%= item.nome %></td>
+            <td scope="row"><%= item.sobrenome %></td>
+            <td scope="row"><%= item.apelido %></td>
+            <td scope="row"><%= item.email %></td>
+            <td scope="row"><%= item.rede_social %></td>
+            <td scope="row"><%= item.telefone %></td>
+            <td scope="row"><%= item.uf %></td>
+
+            <!-- <td><%= item.segundonome %></td>!-->
+            <td scope="row">
+                <a href="/atualizarContato?id=<%= item.id %>"><button type="button"
+                        class="btn btn-outline-info">Atualizar</button></a>
+            </td>
+            <td scope="row">
+                <a href="/excluirContato?id=<%= item.id %>" onClick="return confirm('Confirma a exclusão?')"><button
+                        type="button" class="btn btn-outline-danger">Excluir</button></a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Sobre</h6>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Solução</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Fundação Bruno Victor </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Termos de Privacidade</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4">
+              <h6>Atendimento</h6>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Chat Online</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Telefone</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">FAQ (perguntas frequentes)</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-md-4">
+                <div id="social">
+                  <h6>Social</h6>
+                  <a href="https://github.com/bruno-victor32" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://twitter.com/explore" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/bruno-victor-7058b899/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; Formulário realizado por Bruno Victor 
+      </div>
+      </footer>
+      <!-- Fim footer -->
+
+    
+
+
+</body>
+
+
+</html>
